@@ -1,0 +1,33 @@
+[SORT]
+on: cmd
+string : by command
+[TASK]
+cmd : mkdir temp
+per : 7
+[TASK]
+cmd : rm -r temp
+per : 5
+
+[SORT]
+on : cmd
+string : by cmd
+
+[SORT]
+on:per
+string : by period
+
+[SORT]
+on : name
+string : by name
+
+[TASK]
+cmd: mkdir dir
+per : 10
+name : make dir
+
+[TASK]
+cmd:rm -r dir
+per : 6
+name : remove dir
+
+
